@@ -10,7 +10,7 @@ interface SectionHeaderProps {
 const SectionHeader = ({ 
   title, 
   subtitle, 
-  centered = true, 
+  centered = false, 
   className 
 }: SectionHeaderProps) => {
   return (
@@ -18,14 +18,13 @@ const SectionHeader = ({
       centered ? "text-center" : "text-left",
       className
     )}>
-      <h2 className="text-3xl font-bold text-white">{title}</h2>
+      <h2 className="text-2xl font-bold text-white">{title}</h2>
       {subtitle && (
-        <p className="mt-2 text-gray-400">{subtitle}</p>
+        <p className="mt-1 text-gray-500 text-sm">{subtitle}</p>
       )}
-      <div className={cn(
-        "h-1 bg-emerald-500 mt-4 rounded-full w-16",
-        centered ? "mx-auto" : ""
-      )} />
+      {!centered && (
+        <div className="h-px bg-gray-800 mt-4 w-16" />
+      )}
     </div>
   );
 };

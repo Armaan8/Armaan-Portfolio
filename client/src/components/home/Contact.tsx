@@ -30,6 +30,15 @@ const socialLinks: SocialLink[] = [
     )
   },
   {
+    name: 'Twitter',
+    url: 'https://twitter.com',
+    icon: (
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
+        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
+      </svg>
+    )
+  },
+  {
     name: 'Email',
     url: 'mailto:contact@armaansharma.dev',
     icon: (
@@ -38,38 +47,11 @@ const socialLinks: SocialLink[] = [
         <polyline points="22,6 12,13 2,6"></polyline>
       </svg>
     )
-  },
-  {
-    name: 'Twitter',
-    url: 'https://twitter.com',
-    icon: (
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
-        <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"></path>
-      </svg>
-    )
   }
 ];
 
 const Contact = () => {
   const [isVisible, setIsVisible] = useState(false);
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: ''
-  });
-  
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-  
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // This would connect to a backend in a real application
-    console.log('Form data submitted:', formData);
-    alert('Message sent successfully! I will get back to you soon.');
-    setFormData({ name: '', email: '', message: '' });
-  };
   
   useEffect(() => {
     const handleScroll = () => {
@@ -93,133 +75,57 @@ const Contact = () => {
   }, []);
   
   return (
-    <section id="contact" className="py-16 bg-gray-900/30">
-      <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
-        <SectionHeader title="Contact" subtitle="Let's work together" />
+    <section id="contact" className="py-14 border-t border-gray-900">
+      <div className="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
+        <SectionHeader title="Contact" subtitle="Get in touch" />
         
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
-          {/* Contact Form */}
+        <div className="mt-8 flex flex-col items-center">
           <div 
             className={cn(
-              "transition-all duration-700 transform",
+              "text-center max-w-xl transition-all duration-500 transform",
               isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
             )}
           >
-            <div className="bg-gray-800/70 rounded-xl p-6 border border-gray-700/50">
-              <h3 className="text-xl font-bold mb-4">Send a Message</h3>
-              <form onSubmit={handleSubmit} className="space-y-4">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium mb-1">
-                    Name
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    value={formData.name}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-colors"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium mb-1">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    value={formData.email}
-                    onChange={handleChange}
-                    className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-colors"
-                    required
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium mb-1">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    value={formData.message}
-                    onChange={handleChange}
-                    rows={4}
-                    className="w-full px-4 py-2 bg-gray-900 border border-gray-700 rounded-md focus:outline-none focus:ring-2 focus:ring-emerald-500 transition-colors resize-none"
-                    required
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="w-full bg-emerald-500 hover:bg-emerald-600 text-gray-900 font-medium px-4 py-2 rounded-md transition-colors"
+            <p className="text-gray-400 mb-8">
+              Available for select freelance opportunities and collaborations. Let's connect and create something exceptional together.
+            </p>
+            
+            <div className="flex flex-col items-center space-y-4">
+              <a 
+                href="mailto:contact@armaansharma.dev" 
+                className="text-white hover:text-gray-200 font-medium text-lg transition-colors"
+              >
+                contact@armaansharma.dev
+              </a>
+              
+              <p className="text-gray-500">San Francisco, CA</p>
+            </div>
+            
+            <div className="mt-8 flex justify-center gap-6">
+              {socialLinks.map((link) => (
+                <a
+                  key={link.name}
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                  aria-label={link.name}
                 >
-                  Send Message
-                </button>
-              </form>
+                  {link.icon}
+                </a>
+              ))}
             </div>
           </div>
           
-          {/* Contact Info */}
-          <div
+          <div 
             className={cn(
-              "transition-all duration-700 transform delay-200",
+              "w-full max-w-sm mt-12 pt-8 border-t border-gray-800 text-center transition-all duration-500 delay-200 transform",
               isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
             )}
           >
-            <div className="bg-gray-800/70 rounded-xl p-6 h-full border border-gray-700/50">
-              <h3 className="text-xl font-bold mb-4">Contact Information</h3>
-              <p className="text-gray-400 mb-6">
-                I'm open to discussing new projects, creative ideas or opportunities to be part of your vision.
-              </p>
-              
-              <div className="space-y-4">
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-400">Email</p>
-                    <a href="mailto:contact@armaansharma.dev" className="text-white hover:text-emerald-500 transition-colors">
-                      contact@armaansharma.dev
-                    </a>
-                  </div>
-                </div>
-                
-                <div className="flex items-center gap-3">
-                  <div className="w-10 h-10 rounded-full bg-emerald-500/10 flex items-center justify-center text-emerald-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-5 h-5">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
-                    </svg>
-                  </div>
-                  <div>
-                    <p className="text-sm text-gray-400">Location</p>
-                    <p className="text-white">San Francisco, CA</p>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="mt-8">
-                <p className="text-sm font-medium mb-3">Follow me</p>
-                <div className="flex gap-3">
-                  {socialLinks.map((link) => (
-                    <a
-                      key={link.name}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="w-9 h-9 rounded-full bg-gray-700 flex items-center justify-center text-gray-300 hover:bg-emerald-500 hover:text-white transition-colors"
-                      aria-label={link.name}
-                    >
-                      {link.icon}
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </div>
+            <p className="text-sm text-gray-500">
+              © {new Date().getFullYear()} Armaan Sharma. All rights reserved.
+            </p>
           </div>
         </div>
       </div>

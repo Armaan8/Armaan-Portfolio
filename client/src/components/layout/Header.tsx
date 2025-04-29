@@ -66,13 +66,13 @@ const Header = () => {
     <header 
       className={cn(
         'fixed w-full top-0 z-50 transition-all duration-300',
-        scrolled ? 'bg-[#0a0a0a]/90 backdrop-blur-sm py-3 shadow-md' : 'bg-transparent py-5'
+        scrolled ? 'bg-black/90 backdrop-blur-sm py-3' : 'bg-transparent py-4'
       )}
     >
-      <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <NavLink to="/" className="text-2xl font-bold text-emerald-500">
+          <NavLink to="/" className="text-xl font-bold text-white">
             AS
           </NavLink>
           
@@ -84,8 +84,8 @@ const Header = () => {
                 to={item.path}
                 className={({ isActive }) => 
                   cn(
-                    'font-medium hover:text-emerald-500 transition-colors',
-                    isActive ? 'text-emerald-500' : 'text-gray-200'
+                    'text-sm font-medium hover:text-white transition-colors',
+                    isActive ? 'text-white' : 'text-gray-400'
                   )
                 }
               >
@@ -94,7 +94,7 @@ const Header = () => {
             ))}
             <a 
               href="#contact" 
-              className="text-gray-200 hover:text-emerald-500 font-medium transition-colors"
+              className="text-sm text-gray-400 hover:text-white font-medium transition-colors"
             >
               Contact
             </a>
@@ -111,20 +111,20 @@ const Header = () => {
               fill="none" 
               viewBox="0 0 24 24" 
               stroke="currentColor" 
-              className="w-6 h-6"
+              className="w-5 h-5"
             >
               {isOpen ? (
                 <path 
                   strokeLinecap="round" 
                   strokeLinejoin="round" 
-                  strokeWidth={2} 
+                  strokeWidth={1.5} 
                   d="M6 18L18 6M6 6l12 12"
                 />
               ) : (
                 <path 
                   strokeLinecap="round" 
                   strokeLinejoin="round" 
-                  strokeWidth={2} 
+                  strokeWidth={1.5} 
                   d="M4 6h16M4 12h16M4 18h16"
                 />
               )}
@@ -136,11 +136,11 @@ const Header = () => {
       {/* Mobile Menu */}
       <div 
         className={cn(
-          'fixed inset-0 bg-[#0a0a0a]/95 backdrop-blur-md flex flex-col justify-center items-center md:hidden transition-all duration-300 ease-in-out',
+          'fixed inset-0 bg-black/98 flex flex-col justify-center items-center md:hidden transition-all duration-300 ease-in-out',
           isOpen ? 'opacity-100 z-40' : 'opacity-0 -z-10'
         )}
       >
-        <nav className="flex flex-col items-center gap-8 text-xl">
+        <nav className="flex flex-col items-center gap-6 text-base">
           {navItems.map((item) => (
             <NavLink
               key={item.name}
@@ -148,8 +148,8 @@ const Header = () => {
               onClick={() => setIsOpen(false)}
               className={({ isActive }) => 
                 cn(
-                  'font-medium hover:text-emerald-500 transition-colors',
-                  isActive ? 'text-emerald-500' : 'text-gray-200'
+                  'font-medium hover:text-white transition-colors',
+                  isActive ? 'text-white' : 'text-gray-400'
                 )
               }
             >
@@ -158,7 +158,7 @@ const Header = () => {
           ))}
           <a 
             href="#contact" 
-            className="text-gray-200 hover:text-emerald-500 font-medium transition-colors"
+            className="text-gray-400 hover:text-white font-medium transition-colors"
             onClick={() => setIsOpen(false)}
           >
             Contact
