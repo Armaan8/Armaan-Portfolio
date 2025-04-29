@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import ProjectsGrid from '../components/projects/ProjectsGrid'; 
 import SectionHeader from '../components/ui/section-header';
+import Certifications from '../components/home/Certifications';
 import { projectsData } from '../lib/data';
 import { cn } from '@/lib/utils';
 
@@ -41,8 +42,13 @@ const Projects = () => {
             centered={false}
           />
           
-          <div className="mt-10">
+          <div className="mt-10 mb-20">
             <ProjectsGrid projects={projectsData} />
+          </div>
+          
+          {/* Certifications section moved from Home to here */}
+          <div className="mt-16">
+            <Certifications />
           </div>
         </div>
       </div>

@@ -71,31 +71,6 @@ const Hero = () => {
             </a>
           </div>
         </div>
-        
-        {/* Stats - Horizontal layout */}
-        <div 
-          className={cn(
-            "grid grid-cols-4 gap-2 md:gap-8 mt-16 pt-8 border-t border-gray-800 transition-all duration-500 delay-400 transform",
-            isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
-          )}
-        >
-          <div className="text-center">
-            <p className="text-2xl font-bold text-white">5+</p>
-            <p className="text-xs text-gray-500 mt-1">Years Experience</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-bold text-white">50+</p>
-            <p className="text-xs text-gray-500 mt-1">Projects</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-bold text-white">20+</p>
-            <p className="text-xs text-gray-500 mt-1">Clients</p>
-          </div>
-          <div className="text-center">
-            <p className="text-2xl font-bold text-white">4+</p>
-            <p className="text-xs text-gray-500 mt-1">Certifications</p>
-          </div>
-        </div>
       </div>
       
       {/* Minimal background elements */}
