@@ -5,7 +5,7 @@ export const projectsData: ProjectData[] = [
   {
     id: 1,
     title: "Project Management System",
-    description: "Kanban-style task manager with drag-and-drop functionality and Gantt charts for timeline visualization. Features real-time updates, task prioritization, and 25% reduced planning time.",
+    description: "Kanban-style task manager with drag-and-drop functionality and Gantt charts for timeline visualization. Features real-time updates and task prioritization for improved planning efficiency.",
     imageUrl: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=700",
     demoUrl: "https://github.com",
     githubUrl: "https://github.com",
@@ -14,7 +14,7 @@ export const projectsData: ProjectData[] = [
   {
     id: 2,
     title: "AI Image Generation Application",
-    description: "Creative image generator using Replicate's AI models with 30+ test images. Features modern ShadCN UI and secure Supabase authentication in a responsive, intuitive interface.",
+    description: "Creative image generator using Replicate's AI models. Features modern ShadCN UI and secure Supabase authentication in a responsive, intuitive interface for seamless user experience.",
     imageUrl: "https://images.unsplash.com/photo-1633412802994-5c058f151b66?auto=format&fit=crop&q=80&w=700",
     demoUrl: "https://github.com",
     githubUrl: "https://github.com",
