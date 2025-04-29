@@ -21,54 +21,23 @@ export const useAudio = create<AudioState>((set, get) => ({
   backgroundMusic: null,
   hitSound: null,
   successSound: null,
-  isMuted: true, // Start muted by default
+  isMuted: true, // Always muted
   
-  setBackgroundMusic: (music) => set({ backgroundMusic: music }),
-  setHitSound: (sound) => set({ hitSound: sound }),
-  setSuccessSound: (sound) => set({ successSound: sound }),
+  // Empty functions that do nothing
+  setBackgroundMusic: (music) => {},
+  setHitSound: (sound) => {},
+  setSuccessSound: (sound) => {},
   
   toggleMute: () => {
-    const { isMuted } = get();
-    const newMutedState = !isMuted;
-    
-    // Just update the muted state
-    set({ isMuted: newMutedState });
-    
-    // Log the change
-    console.log(`Sound ${newMutedState ? 'muted' : 'unmuted'}`);
+    // Always remain muted
+    set({ isMuted: true });
   },
   
   playHit: () => {
-    const { hitSound, isMuted } = get();
-    if (hitSound) {
-      // If sound is muted, don't play anything
-      if (isMuted) {
-        console.log("Hit sound skipped (muted)");
-        return;
-      }
-      
-      // Clone the sound to allow overlapping playback
-      const soundClone = hitSound.cloneNode() as HTMLAudioElement;
-      soundClone.volume = 0.3;
-      soundClone.play().catch(error => {
-        console.log("Hit sound play prevented:", error);
-      });
-    }
+    // Do nothing - sounds are disabled
   },
   
   playSuccess: () => {
-    const { successSound, isMuted } = get();
-    if (successSound) {
-      // If sound is muted, don't play anything
-      if (isMuted) {
-        console.log("Success sound skipped (muted)");
-        return;
-      }
-      
-      successSound.currentTime = 0;
-      successSound.play().catch(error => {
-        console.log("Success sound play prevented:", error);
-      });
-    }
+    // Do nothing - sounds are disabled
   }
 }));

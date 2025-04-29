@@ -67,7 +67,7 @@ const Header = () => {
       className={cn(
         'fixed w-full top-0 z-50 transition-all duration-300',
         scrolled 
-          ? 'bg-black/80 backdrop-blur-md py-3' 
+          ? 'bg-black/80 backdrop-blur-md border-b border-white/5 py-3' 
           : 'bg-transparent py-5'
       )}
     >

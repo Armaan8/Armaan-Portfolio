@@ -23,10 +23,13 @@ const Projects = () => {
   
   return (
     <div className="min-h-screen pt-32 pb-16 relative">
-      {/* Aesthetic background elements */}
+      {/* Enhanced background patterns */}
       <div className="absolute inset-0 z-0">
-        <div className="absolute top-48 left-[15%] w-64 h-64 rounded-full bg-white/3 blur-3xl"></div>
-        <div className="absolute bottom-64 right-[10%] w-80 h-80 rounded-full bg-white/3 blur-3xl"></div>
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
+        
+        {/* Subtle accent spots */}
+        <div className="absolute top-48 left-[15%] w-72 h-72 rounded-full bg-white/2 blur-3xl"></div>
+        <div className="absolute bottom-64 right-[10%] w-96 h-96 rounded-full bg-white/2 blur-3xl"></div>
       </div>
       
       <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16 relative z-10">
