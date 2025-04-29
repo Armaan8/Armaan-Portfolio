@@ -65,7 +65,7 @@ const Skills = () => {
                 {duplicatedRow1.map((skill, index) => (
                   <div 
                     key={`row1-${index}`} 
-                    className="px-5 py-2.5 whitespace-nowrap text-sm text-gray-800 hover:bg-gray-100 transition-colors duration-300 bg-white/80 border border-gray-300 rounded-full backdrop-blur-sm"
+                    className="px-5 py-2.5 whitespace-nowrap text-sm text-gray-800 font-medium hover:bg-gray-100 transition-colors duration-300 bg-white/90 border border-gray-300 rounded-full backdrop-blur-sm"
                   >
                     {skill}
                   </div>
@@ -84,7 +84,7 @@ const Skills = () => {
                 {duplicatedRow2.map((skill, index) => (
                   <div 
                     key={`row2-${index}`} 
-                    className="px-5 py-2.5 whitespace-nowrap text-sm text-gray-800 hover:bg-gray-100 transition-colors duration-300 bg-white/80 border border-gray-300 rounded-full backdrop-blur-sm"
+                    className="px-5 py-2.5 whitespace-nowrap text-sm text-gray-800 font-medium hover:bg-gray-100 transition-colors duration-300 bg-white/90 border border-gray-300 rounded-full backdrop-blur-sm"
                   >
                     {skill}
                   </div>

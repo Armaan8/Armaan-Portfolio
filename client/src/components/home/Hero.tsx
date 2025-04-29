@@ -51,7 +51,7 @@ const Hero = () => {
               isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
             )}
           >
-            I create innovative web applications with a focus on user experience and cutting-edge technology. My portfolio showcases projects like a project management system, AI photo generation app, and financial tracking tools.
+            I create innovative web applications with a focus on user experience and cutting-edge technology. I've built projects including project management systems, AI-powered image generation, and financial data tracking applications.
           </p>
           
           {/* Action buttons with rounded corners */}
@@ -72,10 +72,10 @@ const Hero = () => {
             </Link>
             
             <a 
-              href="#contact"
+              href="#resume-section"
               className="inline-flex items-center gap-2 border border-gray-800 hover:border-gray-600 text-gray-300 hover:text-white font-medium px-6 py-2.5 text-sm transition-colors rounded-sm"
             >
-              Contact Me
+              View Resume
             </a>
           </div>
         </div>
