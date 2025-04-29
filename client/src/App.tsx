@@ -13,11 +13,7 @@ const App = () => {
   const [isLoading, setIsLoading] = useState(true);
   
   useEffect(() => {
-    // Simulate loading assets
-    const timer = setTimeout(() => {
-      setIsLoading(false);
-    }, 800);
-    
+    const timer = setTimeout(() => setIsLoading(false), 800);
     return () => clearTimeout(timer);
   }, []);
   
