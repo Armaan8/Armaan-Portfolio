@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import SectionHeader from '../ui/section-header';
+import { certificationData } from '@/lib/data';
 
 interface Certification {
   name: string;
@@ -8,33 +9,6 @@ interface Certification {
   date: string;
   verifyLink: string;
 }
-
-const certifications: Certification[] = [
-  {
-    name: 'AWS Certified Solutions Architect',
-    organization: 'Amazon Web Services',
-    date: 'Dec 2023',
-    verifyLink: 'https://aws.amazon.com/certification/certified-solutions-architect-associate/'
-  },
-  {
-    name: 'Professional Full Stack Engineer',
-    organization: 'Meta',
-    date: 'Aug 2023',
-    verifyLink: 'https://www.meta.com'
-  },
-  {
-    name: 'TensorFlow Developer Certificate',
-    organization: 'Google',
-    date: 'May 2023',
-    verifyLink: 'https://www.tensorflow.org/certificate'
-  },
-  {
-    name: 'Advanced React and Redux',
-    organization: 'Udemy',
-    date: 'Jan 2023',
-    verifyLink: 'https://www.udemy.com'
-  }
-];
 
 const Certifications = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -67,7 +41,7 @@ const Certifications = () => {
         
         <div className="mt-8">
           <div className="flex flex-col gap-4">
-            {certifications.map((cert, index) => (
+            {certificationData.map((cert: Certification, index: number) => (
               <div
                 key={cert.name}
                 className={cn(
@@ -75,7 +49,7 @@ const Certifications = () => {
                   isVisible 
                     ? "translate-y-0 opacity-100" 
                     : "translate-y-4 opacity-0",
-                  index === certifications.length - 1 ? "border-b-0" : ""
+                  index === certificationData.length - 1 ? "border-b-0" : ""
                 )}
                 style={{ transitionDelay: `${index * 100}ms` }}
               >
