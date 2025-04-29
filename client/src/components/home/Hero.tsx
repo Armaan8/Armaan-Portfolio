@@ -51,7 +51,7 @@ const Hero = () => {
               isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
             )}
           >
-            I create innovative web applications with a focus on user experience and cutting-edge technology. I've built projects including project management systems, AI-powered image generation, and financial data tracking applications.
+            I create innovative web applications with a focus on user experience and cutting-edge technology. I specialize in frontend and backend development, with expertise in React, Next.js, and machine learning technologies.
           </p>
           
           {/* Action buttons with rounded corners */}

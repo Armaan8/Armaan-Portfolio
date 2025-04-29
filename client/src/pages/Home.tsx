@@ -1,7 +1,6 @@
 import { useEffect } from 'react';
 import Hero from '../components/home/Hero';
 import Skills from '../components/home/Skills';
-import Resume from '../components/home/Resume';
 import Contact from '../components/home/Contact';
 
 const Home = () => {
@@ -39,7 +38,6 @@ const Home = () => {
     <div>
       <Hero />
       <Skills />
-      <Resume />
       <Contact />
     </div>
   );

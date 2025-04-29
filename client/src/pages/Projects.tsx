@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import ProjectsGrid from '../components/projects/ProjectsGrid'; 
 import SectionHeader from '../components/ui/section-header';
 import Certifications from '../components/home/Certifications';
+import Resume from '../components/home/Resume';
 import { projectsData } from '../lib/data';
 import { cn } from '@/lib/utils';
 
@@ -61,7 +62,12 @@ const Projects = () => {
             <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
           </div>
           
-          {/* Certifications section moved from Home to here */}
+          {/* Education and Organizations section */}
+          <div id="resume-section">
+            <Resume />
+          </div>
+          
+          {/* Certifications section */}
           <div>
             <Certifications />
           </div>
