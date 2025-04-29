@@ -37,35 +37,35 @@ export const skillsData = {
     "Python", "HTML", "CSS", "JavaScript", "TypeScript", "SQL", "Java"
   ],
   frameworks: [
-    "React", "Next.js", "Node.js", "Redux", "Numpy", "Pandas", "Ski-kit Learn"
+    "React", "Next.js", "Node.js", "Redux", "Numpy", "Pandas", "Scikit-Learn"
   ],
   tools: [
     "Git", "Github", "Docker", "Firebase", "Supabase", "AWS", "Prisma", "PostgreSQL"
   ]
 };
 
-// Certification data
+// Certification data from resume
 export const certificationData = [
   {
-    name: "AWS Certified Solutions Architect",
+    name: "AWS Cloud Practitioner",
     organization: "Amazon Web Services",
-    date: "Dec 2023",
-    verifyLink: "https://aws.amazon.com/certification/certified-solutions-architect-associate/"
+    date: "Oct 2023",
+    verifyLink: "https://aws.amazon.com/certification/"
   },
   {
-    name: "Professional Full Stack Engineer",
-    organization: "Meta",
+    name: "Full Stack Development Certificate",
+    organization: "LinkedIn Learning",
     date: "Aug 2023",
-    verifyLink: "https://www.meta.com"
+    verifyLink: "https://www.linkedin.com/learning/"
   },
   {
-    name: "TensorFlow Developer Certificate",
-    organization: "Google",
+    name: "Machine Learning Specialization",
+    organization: "Coursera",
     date: "May 2023",
-    verifyLink: "https://www.tensorflow.org/certificate"
+    verifyLink: "https://www.coursera.org/"
   },
   {
-    name: "Advanced React and Redux",
+    name: "Python Data Structures and Algorithms",
     organization: "Udemy",
     date: "Jan 2023",
     verifyLink: "https://www.udemy.com"

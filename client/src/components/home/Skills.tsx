@@ -1,18 +1,18 @@
 import { useState, useEffect } from 'react';
 import { cn } from '@/lib/utils';
 import SectionHeader from '../ui/section-header';
+import { skillsData } from '@/lib/data';
 
-// Simplified skill list for scrolling animation
+// Combine languages and frameworks for row 1
 const row1Skills = [
-  'JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'Express', 
-  'GraphQL', 'REST API', 'HTML', 'CSS', 'Tailwind CSS', 'SCSS',
-  'Redux', 'Git', 'GitHub', 'AWS', 'Docker', 'PostgreSQL'
+  ...skillsData.languages,
+  ...skillsData.frameworks
 ];
 
+// Use tools and some repeats for row 2
 const row2Skills = [
-  'MongoDB', 'SQL', 'NoSQL', 'Python', 'Django', 'Jest',
-  'Testing Library', 'CI/CD', 'Webpack', 'Vite', 'WebSockets',
-  'Firebase', 'Authentication', 'Authorization', 'Responsive Design'
+  ...skillsData.tools,
+  'REST API', 'Responsive Design', 'Authentication', 'Authorization'
 ];
 
 // Duplicate the skills to create a continuous scroll effect

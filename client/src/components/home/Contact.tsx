@@ -93,13 +93,13 @@ const Contact = () => {
             <div className="py-6">
               <div className="flex flex-col items-center space-y-4">
                 <a 
-                  href="mailto:contact@armaansharma.dev" 
+                  href="mailto:armaansharma081003@gmail.com" 
                   className="text-white hover:text-gray-200 font-medium text-xl transition-colors"
                 >
-                  contact@armaansharma.dev
+                  armaansharma081003@gmail.com
                 </a>
                 
-                <p className="text-gray-500">San Francisco, CA</p>
+                <p className="text-gray-500">Vellore, India</p>
               </div>
             </div>
             
