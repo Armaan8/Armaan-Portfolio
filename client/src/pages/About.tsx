@@ -58,21 +58,21 @@ const About = () => {
             <div className="border-l border-gray-800 pl-6 pb-1">
               <div className="mb-8 relative">
                 <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
-                <h4 className="text-white font-medium">Delhi Public School, Gurgaon</h4>
-                <p className="text-gray-400 mt-1">High School</p>
-                <p className="text-gray-500 text-sm mt-1">2018 - 2022</p>
-                <p className="text-gray-400 mt-3">
-                  Completed high school education with a focus on science and mathematics, participating in numerous extracurricular activities and technology competitions.
-                </p>
-              </div>
-              
-              <div className="mb-8 relative">
-                <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
                 <h4 className="text-white font-medium">B.Tech in Computer Science</h4>
                 <p className="text-gray-400 mt-1">Vellore Institute of Technology</p>
                 <p className="text-gray-500 text-sm mt-1">2022 - 2026</p>
                 <p className="text-gray-400 mt-3">
                   Pursuing a bachelor's degree with specialization in artificial intelligence and machine learning.
+                </p>
+              </div>
+              
+              <div className="mb-8 relative">
+                <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
+                <h4 className="text-white font-medium">Delhi Public School, Gurgaon</h4>
+                <p className="text-gray-400 mt-1">High School</p>
+                <p className="text-gray-500 text-sm mt-1">2008 - 2022</p>
+                <p className="text-gray-400 mt-3">
+                  Completed high school education with a focus on science and mathematics, participating in numerous extracurricular activities and technology competitions. Received comprehensive education with strong emphasis on academic excellence and overall development.
                 </p>
               </div>
             </div>
@@ -89,8 +89,10 @@ const About = () => {
                 <p className="text-gray-400 mt-1">Computer Society of India</p>
                 <p className="text-gray-500 text-sm mt-1">2023 - Present</p>
                 <p className="text-gray-400 mt-3">
-                  Active member of the technical team, contributing to web development projects and technical workshops.
-                  Participated in organizing technical events and hackathons for the student community.
+                  Active member of the technical team at CSI, one of India's largest computer science professional organizations. Contribute to web development projects and technical workshops, focusing on modern frontend frameworks and responsive design solutions. Collaborated on the development of event management platforms and interactive websites for student outreach programs.
+                </p>
+                <p className="text-gray-400 mt-3">
+                  Participated in organizing technical events, hackathons, and knowledge-sharing sessions for the student community. Assisted in conducting workshops on emerging technologies like AI, machine learning, and cloud computing. Regularly contribute to the CSI newsletter with technical articles and event reports.
                 </p>
               </div>
             </div>
