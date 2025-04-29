@@ -87,7 +87,7 @@ const Contact = () => {
             )}
           >
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-              Available for select freelance opportunities and collaborations. Let's connect and create something exceptional together.
+              Interested in my projects or want to discuss a potential collaboration? I'm available for new opportunities to build impactful applications like the ones in my portfolio.
             </p>
             
             <div className="py-6">

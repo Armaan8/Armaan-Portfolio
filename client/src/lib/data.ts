@@ -5,7 +5,7 @@ export const projectsData: ProjectData[] = [
   {
     id: 1,
     title: "Project Management System",
-    description: "A comprehensive project management tool for teams with task tracking, timeline visualization, and resource allocation features.",
+    description: "An intuitive project management system I built to streamline team workflows, featuring real-time task updates, customizable dashboards, and detailed analytics for improving productivity.",
     imageUrl: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=700",
     demoUrl: "https://project-management-demo.com",
     githubUrl: "https://github.com/armaansharma/project-management",
@@ -14,7 +14,7 @@ export const projectsData: ProjectData[] = [
   {
     id: 2,
     title: "AI Photo Generation App",
-    description: "Generate unique, high-quality images from text descriptions using advanced AI models. Features style customization and batch processing.",
+    description: "My innovative AI-powered application that transforms text prompts into stunning images. This project leverages machine learning models to generate artwork with customizable artistic styles and resolutions.",
     imageUrl: "https://images.unsplash.com/photo-1633412802994-5c058f151b66?auto=format&fit=crop&q=80&w=700",
     demoUrl: "https://ai-photo-generator-demo.com",
     githubUrl: "https://github.com/armaansharma/ai-photo-generator",
@@ -23,7 +23,7 @@ export const projectsData: ProjectData[] = [
   {
     id: 3,
     title: "AI-Powered Financial Tracker",
-    description: "Smart financial management application that uses AI to analyze spending patterns, forecast budgets, and provide personalized saving recommendations.",
+    description: "A sophisticated financial management tool I developed that employs machine learning algorithms to analyze your spending patterns and provide personalized financial insights, helping users make smarter decisions with their money.",
     imageUrl: "https://images.unsplash.com/photo-1579170053380-58828d9c31d4?auto=format&fit=crop&q=80&w=700",
     demoUrl: "https://financial-tracker-demo.com",
     githubUrl: "https://github.com/armaansharma/financial-tracker",

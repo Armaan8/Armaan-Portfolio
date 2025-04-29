@@ -50,7 +50,7 @@ const Hero = () => {
               isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
             )}
           >
-            I design and build digital experiences with a focus on minimalism, functionality, and performance. Specializing in modern web applications that make an impact.
+            I create innovative web applications with a focus on user experience and cutting-edge technology. My portfolio showcases projects like a project management system, AI photo generation app, and financial tracking tools.
           </p>
           
           {/* Action buttons with rounded corners */}
