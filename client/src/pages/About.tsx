@@ -48,30 +48,30 @@ const About = () => {
             title="About Me" 
             subtitle="My background and experience"
             centered={false}
-            className="mb-16"
+            className="mb-10"
           />
           
           {/* School Section */}
-          <div className="mb-20">
-            <h3 className="text-xl font-medium text-white mb-6">Education</h3>
+          <div className="mb-12">
+            <h3 className="text-xl font-medium text-white mb-4">Education</h3>
             
             <div className="border-l border-gray-800 pl-6 pb-1">
-              <div className="mb-8 relative">
+              <div className="mb-6 relative">
                 <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
                 <h4 className="text-white font-medium">B.Tech in Computer Science</h4>
                 <p className="text-gray-400 mt-1">Vellore Institute of Technology</p>
                 <p className="text-gray-500 text-sm mt-1">2022 - 2026</p>
-                <p className="text-gray-400 mt-3">
+                <p className="text-gray-400 mt-2">
                   Pursuing a bachelor's degree with specialization in artificial intelligence and machine learning.
                 </p>
               </div>
               
-              <div className="mb-8 relative">
+              <div className="mb-4 relative">
                 <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
                 <h4 className="text-white font-medium">Delhi Public School, Gurgaon</h4>
                 <p className="text-gray-400 mt-1">High School</p>
                 <p className="text-gray-500 text-sm mt-1">2008 - 2022</p>
-                <p className="text-gray-400 mt-3">
+                <p className="text-gray-400 mt-2">
                   Completed high school education with a focus on science and mathematics, participating in numerous extracurricular activities and technology competitions. Received comprehensive education with strong emphasis on academic excellence and overall development.
                 </p>
               </div>
@@ -79,22 +79,22 @@ const About = () => {
           </div>
           
           {/* Computer Society of India */}
-          <div className="mb-20">
-            <h3 className="text-xl font-medium text-white mb-6">Organizations</h3>
+          <div className="mb-12">
+            <h3 className="text-xl font-medium text-white mb-4">Organizations</h3>
             
             <div className="border-l border-gray-800 pl-6 pb-1">
-              <div className="mb-8 relative">
+              <div className="mb-4 relative">
                 <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
                 <h4 className="text-white font-medium">Core Member</h4>
                 <p className="text-gray-400 mt-1">Computer Society of India</p>
                 <p className="text-gray-500 text-sm mt-1">April 2023 - Present</p>
-                <p className="text-gray-400 mt-3">
+                <p className="text-gray-400 mt-2">
                   Technical Chapter, Vellore Institute of Technology, Vellore
                 </p>
-                <p className="text-gray-400 mt-3">
+                <p className="text-gray-400 mt-2">
                   Coordinated Yantra 23 and Yantra 24, VIT's central hackathons, streamlining execution for 1000+ attendees.
                 </p>
-                <p className="text-gray-400 mt-3">
+                <p className="text-gray-400 mt-2">
                   Led the planning and execution of technical events and workshops, overseeing logistics, outreach, and engagement.
                 </p>
               </div>
@@ -102,12 +102,12 @@ const About = () => {
           </div>
           
           {/* Certifications section */}
-          <div className="mb-20">
+          <div className="mb-12">
             <Certifications />
           </div>
           
           {/* Download Resume button */}
-          <div className="flex justify-center mt-16 mb-8">
+          <div className="flex justify-center mt-10 mb-6">
             <a 
               href="#" 
               className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-black font-medium px-6 py-2.5 text-sm transition-colors rounded-sm"

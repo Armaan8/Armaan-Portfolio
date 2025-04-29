@@ -35,11 +35,11 @@ const Certifications = () => {
   }, []);
   
   return (
-    <section id="certifications-section" className="py-14">
+    <section id="certifications-section" className="py-6">
       <div className="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
         <SectionHeader title="Certifications" subtitle="Technical expertise and achievements" />
         
-        <div className="mt-8">
+        <div className="mt-4">
           <div className="flex flex-col gap-4">
             {certificationData.map((cert: Certification, index: number) => (
               <div
