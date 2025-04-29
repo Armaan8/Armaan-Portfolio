@@ -119,16 +119,7 @@ const Contact = () => {
             </div>
           </div>
           
-          <div 
-            className={cn(
-              "w-full max-w-sm mt-12 pt-6 text-center transition-all duration-500 delay-200 transform",
-              isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
-            )}
-          >
-            <p className="text-sm text-gray-500">
-              © {new Date().getFullYear()} Armaan Sharma. All rights reserved.
-            </p>
-          </div>
+          {/* Copyright notice removed */}
         </div>
       </div>
     </section>
