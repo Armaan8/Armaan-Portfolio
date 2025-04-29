@@ -1,49 +1,46 @@
 import { ProjectData } from '../components/projects/ProjectCard';
 
-// Project data for the portfolio with the three specific projects requested
+// Project data based on actual resume information
 export const projectsData: ProjectData[] = [
   {
     id: 1,
     title: "Project Management System",
-    description: "An intuitive project management system I built to streamline team workflows, featuring real-time task updates, customizable dashboards, and detailed analytics for improving productivity.",
+    description: "Developed a comprehensive project management system with 4 sections: To Do, Work In Progress, Under Review, and Completed. Implemented drag-and-drop functionality, task prioritization, and real-time progress updates. Integrated Gantt charts for project timelines, reducing planning time by 25%.",
     imageUrl: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&q=80&w=700",
-    demoUrl: "https://project-management-demo.com",
-    githubUrl: "https://github.com/armaansharma/project-management",
-    tags: ["React", "TypeScript", "Node.js", "MongoDB", "Socket.io"]
+    demoUrl: "https://github.com",
+    githubUrl: "https://github.com",
+    tags: ["Next.js", "Node.js", "PostgreSQL", "AWS", "Redux Toolkit", "Prisma", "Material UI"]
   },
   {
     id: 2,
-    title: "AI Photo Generation App",
-    description: "My innovative AI-powered application that transforms text prompts into stunning images. This project leverages machine learning models to generate artwork with customizable artistic styles and resolutions.",
+    title: "AI Image Generation Application",
+    description: "Built an AI image generation app using Replicate's flux-dev and flux-schnell models, generating 30+ images during testing. Created a modern, responsive UI with ShadCN UI, optimizing navigation and reducing interaction time. Implemented authentication with Supabase for secure access.",
     imageUrl: "https://images.unsplash.com/photo-1633412802994-5c058f151b66?auto=format&fit=crop&q=80&w=700",
-    demoUrl: "https://ai-photo-generator-demo.com",
-    githubUrl: "https://github.com/armaansharma/ai-photo-generator",
-    tags: ["Next.js", "Python", "TensorFlow", "OpenAI API", "AWS"]
+    demoUrl: "https://github.com",
+    githubUrl: "https://github.com",
+    tags: ["Next.js", "Supabase", "Replicate API", "ShadCN UI", "Authentication"]
   },
   {
     id: 3,
-    title: "AI-Powered Financial Tracker",
-    description: "A sophisticated financial management tool I developed that employs machine learning algorithms to analyze your spending patterns and provide personalized financial insights, helping users make smarter decisions with their money.",
+    title: "Financial Data Tracking System",
+    description: "Developed a financial tracking system with data visualization capabilities, expense categorization, and budget planning tools. Used React for the frontend and Node.js for backend services, with PostgreSQL for data storage. Implemented responsive design for cross-platform functionality.",
     imageUrl: "https://images.unsplash.com/photo-1579170053380-58828d9c31d4?auto=format&fit=crop&q=80&w=700",
-    demoUrl: "https://financial-tracker-demo.com",
-    githubUrl: "https://github.com/armaansharma/financial-tracker",
-    tags: ["React", "Express", "PostgreSQL", "Machine Learning", "D3.js"]
+    demoUrl: "https://github.com",
+    githubUrl: "https://github.com",
+    tags: ["React", "Node.js", "PostgreSQL", "Data Visualization", "Responsive Design"]
   }
 ];
 
-// Skills data grouped by category
+// Skills data from resume
 export const skillsData = {
-  frontend: [
-    "React", "Next.js", "TypeScript", "Tailwind CSS", "Redux", "HTML/CSS", "JavaScript"
+  languages: [
+    "Python", "HTML", "CSS", "JavaScript", "TypeScript", "SQL", "Java"
   ],
-  backend: [
-    "Node.js", "Express", "Python", "Django", "RESTful APIs", "GraphQL"
+  frameworks: [
+    "React", "Next.js", "Node.js", "Redux", "Numpy", "Pandas", "Ski-kit Learn"
   ],
-  database: [
-    "MongoDB", "PostgreSQL", "MySQL", "Firebase", "Redis"
-  ],
-  devOps: [
-    "Git", "Docker", "AWS", "CI/CD", "Webpack", "Jest", "Vercel"
+  tools: [
+    "Git", "Github", "Docker", "Firebase", "Supabase", "AWS", "Prisma", "PostgreSQL"
   ]
 };
 

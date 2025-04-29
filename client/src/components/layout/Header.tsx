@@ -101,13 +101,7 @@ const Header = () => {
                 <span className="absolute h-px w-0 bg-white/30 bottom-0 left-0 transition-all duration-300 group-hover:w-full"></span>
               </NavLink>
             ))}
-            <a 
-              href="#contact" 
-              className="text-sm tracking-wide text-gray-400 hover:text-white font-medium transition-colors relative group"
-            >
-              Contact
-              <span className="absolute h-px w-0 bg-white/30 bottom-0 left-0 transition-all duration-300 group-hover:w-full"></span>
-            </a>
+{/* Contact link removed */}
           </nav>
           
           {/* Mobile Hamburger with hover effect */}
@@ -178,19 +172,7 @@ const Header = () => {
               {item.name}
             </NavLink>
           ))}
-          <a 
-            href="#contact" 
-            className="text-gray-400 hover:text-white font-medium text-lg tracking-wide transition-colors"
-            onClick={() => setIsOpen(false)}
-            style={{ 
-              transitionDelay: `${navItems.length * 100}ms`,
-              opacity: isOpen ? 1 : 0,
-              transform: isOpen ? 'translateY(0)' : 'translateY(20px)',
-              transition: 'opacity 500ms, transform 500ms'
-            }}
-          >
-            Contact
-          </a>
+{/* Mobile Contact link removed */}
         </nav>
       </div>
     </header>

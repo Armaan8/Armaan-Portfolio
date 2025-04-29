@@ -1,0 +1,36 @@
+Armaan Sharma
++91 9891886988 | armaansharma081003@gmail.com | LinkedIn | GitHub
+Education
+Vellore Institute of Technology, Vellore 2022 – Present
+B.Tech in Computer Science, Data Science CGPA: 8.78
+Delhi Public School, Gurgaon 2022
+PCM with Computer Science
+Projects
+AI-Powered Image Generation Application — Next.js, Supabase, Replicate API
+– Developed an AI image generation application using Replicate’s flux-dev and flux-schnell models, generating 30+
+images during testing.
+– Designed a modern, responsive user interface with ShadCN UI, optimizing navigation and reducing interaction time.
+– Implemented authentication using Supabase, enabling secure access and session management.
+– Leveraged custom models to generate high-quality images in 2–9 seconds per prompt depending on parameters.
+Project Management System — Next.js, Node.js, PostgreSQL, AWS, Redux Toolkit, Prisma
+– Developed a project management system with 4 sections: To Do, Work In Progress, Under Review, and Completed.
+– Implemented drag-and-drop functionality for task management and real-time progress updates.
+– Enabled task prioritization and streamlined workflows for improved productivity.
+– Built a responsive UI with Material UI, and deployed on AWS, ensuring 99.9% uptime with PostgreSQL and Prisma.
+– Integrated Gantt charts to visualize project timelines and dependencies, reducing planning time by 25%.
+Technical Skills
+Languages: Python, HTML, CSS, JavaScript, TypeScript, SQL, Java
+Frameworks & Libraries: React, Next.js, Node.js, Redux, Numpy, Pandas, Ski-kit Learn
+Tools & Platforms: Git, Github, Docker, Firebase, Supabase, AWS, Prisma, PostgreSQL
+Relevant Coursework: Data Structures and Algorithms, Design and Analysis of Algorithms, Structured and
+Object-Oriented Programming, Web Development, Computer Architecture and Organization, Operating Systems,
+Computer Networks, Database Management Systems, Embedded Systems, Software Engineering
+Co-Curricular Activities
+Core Member – Computer Society of India April 2023 – Present
+Technical Chapter, Vellore Institute of Technology, Vellore
+– Coordinated Yantra 23 and Yantra 24, VIT’s central hackathons, streamlining execution for 1000+ attendees.
+– Led the planning and execution of technical events and workshops, overseeing logistics, outreach, and engagement.
+Technical Courses
+Python for Development, AI & Data Science – IBM (Coursera)
+Python and SQL Course – Scaler Topics
+Data Science Real World Projects in Python – Udemy

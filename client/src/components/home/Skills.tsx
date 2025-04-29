@@ -44,7 +44,7 @@ const Skills = () => {
   }, []);
   
   return (
-    <section id="skills-section" className="py-16 overflow-hidden relative">
+    <section id="skills-section" className="pt-8 pb-16 overflow-hidden relative">
       <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16 relative z-10">
         <SectionHeader title="Skills" subtitle="Technologies & Tools" className="mb-12" />
         
@@ -65,7 +65,7 @@ const Skills = () => {
                 {duplicatedRow1.map((skill, index) => (
                   <div 
                     key={`row1-${index}`} 
-                    className="px-5 py-2.5 whitespace-nowrap text-sm text-black hover:bg-gray-100 transition-colors duration-300 bg-white border border-gray-200 rounded-full"
+                    className="px-5 py-2.5 whitespace-nowrap text-sm text-gray-800 hover:bg-gray-100 transition-colors duration-300 bg-white/80 border border-gray-300 rounded-full backdrop-blur-sm"
                   >
                     {skill}
                   </div>
@@ -84,7 +84,7 @@ const Skills = () => {
                 {duplicatedRow2.map((skill, index) => (
                   <div 
                     key={`row2-${index}`} 
-                    className="px-5 py-2.5 whitespace-nowrap text-sm text-black hover:bg-gray-100 transition-colors duration-300 bg-white border border-gray-200 rounded-full"
+                    className="px-5 py-2.5 whitespace-nowrap text-sm text-gray-800 hover:bg-gray-100 transition-colors duration-300 bg-white/80 border border-gray-300 rounded-full backdrop-blur-sm"
                   >
                     {skill}
                   </div>

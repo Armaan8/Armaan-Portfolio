@@ -14,7 +14,7 @@ const Hero = () => {
   }, []);
   
   return (
-    <section className="relative pt-32 pb-20 md:py-36 overflow-hidden">
+    <section className="relative pt-32 pb-10 md:py-28 overflow-hidden">
       {/* Enhanced background patterns */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.075)_1px,transparent_1px)] bg-[length:20px_20px]"></div>
