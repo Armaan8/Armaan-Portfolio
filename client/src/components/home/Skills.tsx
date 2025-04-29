@@ -44,12 +44,9 @@ const Skills = () => {
   }, []);
   
   return (
-    <section id="skills-section" className="py-24 overflow-hidden relative">
-      {/* Aesthetic background for skills section */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black to-gray-900/20 z-0"></div>
-      
+    <section id="skills-section" className="py-16 overflow-hidden relative">
       <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16 relative z-10">
-        <SectionHeader title="Skills" subtitle="Technologies & Tools" className="mb-16" />
+        <SectionHeader title="Skills" subtitle="Technologies & Tools" className="mb-12" />
         
         {/* Main skills section with scrolling animation - just 2 rows */}
         <div 
@@ -63,12 +60,12 @@ const Skills = () => {
             <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-black to-transparent z-10"></div>
             <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-black to-transparent z-10"></div>
             
-            <div className="animate-scroll flex absolute">
+            <div className="flex absolute" style={{ animation: 'scroll 100s linear infinite' }}>
               <div className="flex flex-nowrap gap-6 pr-6">
                 {duplicatedRow1.map((skill, index) => (
                   <div 
                     key={`row1-${index}`} 
-                    className="border border-gray-800 px-5 py-2.5 whitespace-nowrap text-sm hover:border-white/50 hover:text-white transition-colors duration-300 backdrop-blur-sm bg-black/30 hover-lift"
+                    className="border border-gray-800 px-5 py-2.5 whitespace-nowrap text-sm hover:border-white/50 hover:text-white transition-colors duration-300 bg-black/30 rounded-md"
                   >
                     {skill}
                   </div>
@@ -82,12 +79,12 @@ const Skills = () => {
             <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-black to-transparent z-10"></div>
             <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-black to-transparent z-10"></div>
             
-            <div className="animate-scroll flex absolute" style={{ animationDirection: 'reverse' }}>
+            <div className="flex absolute" style={{ animation: 'scroll 120s linear infinite reverse' }}>
               <div className="flex flex-nowrap gap-6 pr-6">
                 {duplicatedRow2.map((skill, index) => (
                   <div 
                     key={`row2-${index}`} 
-                    className="border border-gray-800 px-5 py-2.5 whitespace-nowrap text-sm hover:border-white/50 hover:text-white transition-colors duration-300 backdrop-blur-sm bg-black/30 hover-lift"
+                    className="border border-gray-800 px-5 py-2.5 whitespace-nowrap text-sm hover:border-white/50 hover:text-white transition-colors duration-300 bg-black/30 rounded-md"
                   >
                     {skill}
                   </div>
@@ -95,9 +92,6 @@ const Skills = () => {
               </div>
             </div>
           </div>
-          
-          {/* Subtle glowing effect in the center */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 top-1/2 -translate-y-1/2 w-40 h-40 bg-white/5 blur-3xl rounded-full pointer-events-none opacity-70 animate-pulse-slow"></div>
         </div>
       </div>
     </section>

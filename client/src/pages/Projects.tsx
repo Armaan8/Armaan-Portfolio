@@ -22,32 +22,44 @@ const Projects = () => {
   }, []);
   
   return (
-    <div className="min-h-screen pt-24 pb-16">
-      <div className="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
+    <div className="min-h-screen pt-32 pb-16 relative">
+      {/* Aesthetic background elements */}
+      <div className="absolute inset-0 z-0">
+        <div className="absolute top-48 left-[15%] w-64 h-64 rounded-full bg-white/3 blur-3xl"></div>
+        <div className="absolute bottom-64 right-[10%] w-80 h-80 rounded-full bg-white/3 blur-3xl"></div>
+      </div>
+      
+      <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16 relative z-10">
         <div className={cn("transition-opacity duration-500", isLoaded ? 'opacity-100' : 'opacity-0')}>
           {/* Back link */}
           <Link 
             to="/" 
-            className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-8 text-sm"
+            className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-12 text-sm group"
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4 transition-transform duration-300 group-hover:-translate-x-1" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M9.707 14.707a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414l4-4a1 1 0 011.414 1.414L7.414 9H15a1 1 0 110 2H7.414l2.293 2.293a1 1 0 010 1.414z" clipRule="evenodd" />
             </svg>
-            Back to Home
+            <span className="transition-colors duration-300">Back to Home</span>
           </Link>
           
           <SectionHeader 
             title="Projects" 
             subtitle="Selected work"
             centered={false}
+            className="mb-16"
           />
           
-          <div className="mt-10 mb-20">
+          <div className="mt-10 mb-32">
             <ProjectsGrid projects={projectsData} />
           </div>
           
+          {/* Divider */}
+          <div className="relative py-6 mb-16">
+            <div className="absolute left-0 top-1/2 transform -translate-y-1/2 w-full h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+          </div>
+          
           {/* Certifications section moved from Home to here */}
-          <div className="mt-16">
+          <div>
             <Certifications />
           </div>
         </div>

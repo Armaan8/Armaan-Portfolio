@@ -66,43 +66,53 @@ const Header = () => {
     <header 
       className={cn(
         'fixed w-full top-0 z-50 transition-all duration-300',
-        scrolled ? 'bg-black/90 backdrop-blur-sm py-3' : 'bg-transparent py-4'
+        scrolled 
+          ? 'bg-black/80 backdrop-blur-md border-b border-white/5 py-3' 
+          : 'bg-transparent py-5'
       )}
     >
-      <div className="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
+      <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16">
         <div className="flex items-center justify-between">
-          {/* Logo */}
-          <NavLink to="/" className="text-xl font-bold text-white">
-            AS
+          {/* Logo with subtle animation */}
+          <NavLink 
+            to="/" 
+            className="relative group"
+          >
+            <span className="text-xl font-bold tracking-tight text-white transition-transform duration-300 inline-block group-hover:scale-110">
+              AS
+              <span className="absolute h-px w-0 bg-white/50 bottom-0 left-0 transition-all duration-300 group-hover:w-full"></span>
+            </span>
           </NavLink>
           
           {/* Desktop Nav */}
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-12">
             {navItems.map((item) => (
               <NavLink
                 key={item.name}
                 to={item.path}
                 className={({ isActive }) => 
                   cn(
-                    'text-sm font-medium hover:text-white transition-colors',
-                    isActive ? 'text-white' : 'text-gray-400'
+                    'text-sm tracking-wide font-medium hover:text-white transition-colors relative group',
+                    isActive ? 'active-nav-link' : 'text-gray-400'
                   )
                 }
               >
                 {item.name}
+                <span className="absolute h-px w-0 bg-white/30 bottom-0 left-0 transition-all duration-300 group-hover:w-full"></span>
               </NavLink>
             ))}
             <a 
               href="#contact" 
-              className="text-sm text-gray-400 hover:text-white font-medium transition-colors"
+              className="text-sm tracking-wide text-gray-400 hover:text-white font-medium transition-colors relative group"
             >
               Contact
+              <span className="absolute h-px w-0 bg-white/30 bottom-0 left-0 transition-all duration-300 group-hover:w-full"></span>
             </a>
           </nav>
           
-          {/* Mobile Hamburger */}
+          {/* Mobile Hamburger with hover effect */}
           <button 
-            className="md:hidden flex items-center"
+            className="md:hidden flex items-center justify-center w-10 h-10 hover:bg-white/5 rounded-sm transition-colors"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
@@ -133,33 +143,51 @@ const Header = () => {
         </div>
       </div>
       
-      {/* Mobile Menu */}
+      {/* Mobile Menu with aesthetic improvements */}
       <div 
         className={cn(
-          'fixed inset-0 bg-black/98 flex flex-col justify-center items-center md:hidden transition-all duration-300 ease-in-out',
+          'fixed inset-0 bg-black/95 backdrop-blur-lg flex flex-col justify-center items-center md:hidden transition-all duration-500 ease-in-out',
           isOpen ? 'opacity-100 z-40' : 'opacity-0 -z-10'
         )}
       >
-        <nav className="flex flex-col items-center gap-6 text-base">
-          {navItems.map((item) => (
+        {/* Background decoration */}
+        <div className="absolute inset-0 overflow-hidden z-0">
+          <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-white/3 blur-3xl"></div>
+          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-white/3 blur-3xl"></div>
+        </div>
+        
+        <nav className="flex flex-col items-center gap-8 text-base relative z-10">
+          {navItems.map((item, index) => (
             <NavLink
               key={item.name}
               to={item.path}
               onClick={() => setIsOpen(false)}
               className={({ isActive }) => 
                 cn(
-                  'font-medium hover:text-white transition-colors',
+                  'font-medium text-lg tracking-wide transition-colors',
                   isActive ? 'text-white' : 'text-gray-400'
                 )
               }
+              style={{ 
+                transitionDelay: `${index * 100}ms`,
+                opacity: isOpen ? 1 : 0,
+                transform: isOpen ? 'translateY(0)' : 'translateY(20px)',
+                transition: 'opacity 500ms, transform 500ms'
+              }}
             >
               {item.name}
             </NavLink>
           ))}
           <a 
             href="#contact" 
-            className="text-gray-400 hover:text-white font-medium transition-colors"
+            className="text-gray-400 hover:text-white font-medium text-lg tracking-wide transition-colors"
             onClick={() => setIsOpen(false)}
+            style={{ 
+              transitionDelay: `${navItems.length * 100}ms`,
+              opacity: isOpen ? 1 : 0,
+              transform: isOpen ? 'translateY(0)' : 'translateY(20px)',
+              transition: 'opacity 500ms, transform 500ms'
+            }}
           >
             Contact
           </a>
