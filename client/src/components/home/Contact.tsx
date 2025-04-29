@@ -75,43 +75,55 @@ const Contact = () => {
   }, []);
   
   return (
-    <section id="contact" className="py-14 border-t border-gray-900">
-      <div className="max-w-5xl mx-auto px-4 md:px-6 lg:px-8">
-        <SectionHeader title="Contact" subtitle="Get in touch" />
+    <section id="contact" className="py-28 relative overflow-hidden">
+      {/* Aesthetic background elements */}
+      <div className="absolute inset-0 bg-gradient-to-t from-gray-900/30 to-black z-0"></div>
+      <div className="absolute top-0 left-[35%] w-64 h-64 rounded-full bg-white/3 blur-3xl"></div>
+      
+      <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16 relative z-10">
+        <SectionHeader title="Contact" subtitle="Get in touch" className="mb-16" />
         
-        <div className="mt-8 flex flex-col items-center">
+        <div className="flex flex-col items-center">
           <div 
             className={cn(
               "text-center max-w-xl transition-all duration-500 transform",
               isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
             )}
           >
-            <p className="text-gray-400 mb-8">
+            <p className="text-gray-400 text-lg leading-relaxed mb-12">
               Available for select freelance opportunities and collaborations. Let's connect and create something exceptional together.
             </p>
             
-            <div className="flex flex-col items-center space-y-4">
-              <a 
-                href="mailto:contact@armaansharma.dev" 
-                className="text-white hover:text-gray-200 font-medium text-lg transition-colors"
-              >
-                contact@armaansharma.dev
-              </a>
+            <div className="relative py-6">
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+              <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-32 h-px bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
               
-              <p className="text-gray-500">San Francisco, CA</p>
+              <div className="flex flex-col items-center space-y-6">
+                <a 
+                  href="mailto:contact@armaansharma.dev" 
+                  className="text-white hover:text-gray-200 font-medium text-xl tracking-wide transition-colors"
+                >
+                  contact@armaansharma.dev
+                </a>
+                
+                <p className="text-gray-500">San Francisco, CA</p>
+              </div>
             </div>
             
-            <div className="mt-8 flex justify-center gap-6">
-              {socialLinks.map((link) => (
+            <div className="mt-12 flex justify-center gap-8">
+              {socialLinks.map((link, index) => (
                 <a
                   key={link.name}
                   href={link.url}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-gray-400 hover:text-white transition-colors"
+                  className="group text-gray-400 hover:text-white transition-all duration-300"
                   aria-label={link.name}
+                  style={{ transitionDelay: `${index * 75}ms` }}
                 >
-                  {link.icon}
+                  <div className="transform group-hover:scale-110 transition-transform duration-300">
+                    {link.icon}
+                  </div>
                 </a>
               ))}
             </div>
@@ -119,7 +131,7 @@ const Contact = () => {
           
           <div 
             className={cn(
-              "w-full max-w-sm mt-12 pt-8 border-t border-gray-800 text-center transition-all duration-500 delay-200 transform",
+              "w-full max-w-sm mt-16 pt-8 text-center transition-all duration-500 delay-200 transform",
               isVisible ? "translate-y-0 opacity-100" : "translate-y-8 opacity-0"
             )}
           >

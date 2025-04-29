@@ -11,6 +11,7 @@
     @apply bg-black text-gray-300 font-sans antialiased;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
   }
   
   html {
@@ -35,15 +36,15 @@
   }
   
   .animate-scroll {
-    animation: scroll 20s linear infinite;
+    animation: scroll 60s linear infinite;
   }
   
   @keyframes scroll {
     from {
-      transform: translateY(0);
+      transform: translateX(0);
     }
     to {
-      transform: translateY(-50%);
+      transform: translateX(-50%);
     }
   }
 
@@ -62,11 +63,48 @@
       transform: translateY(0px);
     }
   }
+
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,0.5));
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  }
+  
+  @keyframes pulse {
+    0%, 100% {
+      opacity: 0.8;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+  
+  .hover-lift {
+    transition: transform 0.2s ease-out;
+  }
+  
+  .hover-lift:hover {
+    transform: translateY(-2px);
+  }
 }
 
 /* For active navigation links */
 .active-nav-link {
-  @apply text-white font-medium;
+  @apply text-white font-medium relative;
+}
+
+.active-nav-link::after {
+  content: '';
+  @apply absolute left-0 bottom-0 h-px w-full bg-white/30 transform scale-x-0 origin-bottom-right transition-transform duration-300;
+}
+
+.active-nav-link:hover::after {
+  @apply scale-x-100 origin-bottom-left;
 }
 
 /* For section transitions */
@@ -76,7 +114,7 @@
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {

@@ -18,12 +18,27 @@ const SectionHeader = ({
       centered ? "text-center" : "text-left",
       className
     )}>
-      <h2 className="text-2xl font-bold text-white">{title}</h2>
+      <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">{title}</h2>
+      
       {subtitle && (
-        <p className="mt-1 text-gray-500 text-sm">{subtitle}</p>
+        <p className="mt-2 text-gray-400 text-base tracking-wide">
+          {subtitle}
+        </p>
       )}
+      
       {!centered && (
-        <div className="h-px bg-gray-800 mt-4 w-16" />
+        <div className="relative mt-5">
+          <div className="h-px w-24 bg-gradient-to-r from-white/20 to-transparent"></div>
+          <div className="h-px w-12 bg-white/30 mt-1"></div>
+        </div>
+      )}
+      
+      {centered && (
+        <div className="flex justify-center mt-5">
+          <div className="relative">
+            <div className="h-px w-16 bg-gradient-to-r from-transparent via-white/20 to-transparent"></div>
+          </div>
+        </div>
       )}
     </div>
   );
