@@ -138,20 +138,14 @@ const Header = () => {
         </div>
       </div>
       
-      {/* Mobile Menu with aesthetic improvements */}
+      {/* Mobile Menu - Displayed at the top */}
       <div 
         className={cn(
-          'fixed inset-0 bg-black/95 backdrop-blur-lg flex flex-col justify-center items-center md:hidden transition-all duration-500 ease-in-out',
-          isOpen ? 'opacity-100 z-40' : 'opacity-0 -z-10'
+          'fixed top-0 left-0 right-0 bg-black/95 backdrop-blur-lg flex justify-center md:hidden transition-all duration-300 ease-in-out',
+          isOpen ? 'opacity-100 z-40 h-auto pt-20 pb-6' : 'opacity-0 -z-10 h-0 pt-0 pb-0'
         )}
       >
-        {/* Background decoration */}
-        <div className="absolute inset-0 overflow-hidden z-0">
-          <div className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full bg-white/3 blur-3xl"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-64 h-64 rounded-full bg-white/3 blur-3xl"></div>
-        </div>
-        
-        <nav className="flex flex-col items-center gap-8 text-base relative z-10">
+        <nav className="flex flex-col items-center gap-4 text-base relative z-10 w-full px-8">
           {navItems.map((item, index) => (
             <NavLink
               key={item.name}
@@ -159,21 +153,20 @@ const Header = () => {
               onClick={() => setIsOpen(false)}
               className={({ isActive }) => 
                 cn(
-                  'font-medium text-lg tracking-wide transition-colors',
+                  'font-medium text-base tracking-wide transition-colors py-2 w-full text-center border-b border-white/10',
                   isActive ? 'text-white' : 'text-gray-400'
                 )
               }
               style={{ 
-                transitionDelay: `${index * 100}ms`,
+                transitionDelay: `${index * 50}ms`,
                 opacity: isOpen ? 1 : 0,
-                transform: isOpen ? 'translateY(0)' : 'translateY(20px)',
-                transition: 'opacity 500ms, transform 500ms'
+                transform: isOpen ? 'translateY(0)' : 'translateY(-10px)',
+                transition: 'opacity 300ms, transform 300ms'
               }}
             >
               {item.name}
             </NavLink>
           ))}
-{/* Mobile Contact link removed */}
         </nav>
       </div>
     </header>
