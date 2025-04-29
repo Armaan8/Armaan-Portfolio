@@ -59,7 +59,8 @@ const Header = () => {
   // Nav items
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Projects', path: '/projects' }
+    { name: 'Projects', path: '/projects' },
+    { name: 'About Me', path: '/about' }
   ];
   
   return (
@@ -67,7 +68,7 @@ const Header = () => {
       className={cn(
         'fixed w-full top-0 z-50 transition-all duration-300',
         scrolled 
-          ? 'bg-black/80 backdrop-blur-md border-b border-gray-800 py-3' 
+          ? 'bg-black/80 backdrop-blur-md py-3' 
           : 'bg-transparent py-5'
       )}
     >
