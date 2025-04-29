@@ -57,15 +57,15 @@ const Skills = () => {
         >
           {/* First row - Left to right */}
           <div className="relative h-14 mb-8 overflow-hidden">
-            <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-black to-transparent z-10"></div>
-            <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-black to-transparent z-10"></div>
+            <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-black via-black/80 to-transparent z-10"></div>
+            <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-black via-black/80 to-transparent z-10"></div>
             
             <div className="flex absolute" style={{ animation: 'scroll 100s linear infinite' }}>
               <div className="flex flex-nowrap gap-6 pr-6">
                 {duplicatedRow1.map((skill, index) => (
                   <div 
                     key={`row1-${index}`} 
-                    className="px-5 py-2.5 whitespace-nowrap text-sm hover:text-white transition-colors duration-300 bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-800 rounded-full"
+                    className="px-5 py-2.5 whitespace-nowrap text-sm text-black hover:bg-gray-100 transition-colors duration-300 bg-white border border-gray-200 rounded-full"
                   >
                     {skill}
                   </div>
@@ -76,15 +76,15 @@ const Skills = () => {
           
           {/* Second row - Right to left */}
           <div className="relative h-14 overflow-hidden">
-            <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-black to-transparent z-10"></div>
-            <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-black to-transparent z-10"></div>
+            <div className="absolute top-0 left-0 w-16 h-full bg-gradient-to-r from-black via-black/80 to-transparent z-10"></div>
+            <div className="absolute top-0 right-0 w-16 h-full bg-gradient-to-l from-black via-black/80 to-transparent z-10"></div>
             
             <div className="flex absolute" style={{ animation: 'scroll 120s linear infinite reverse' }}>
               <div className="flex flex-nowrap gap-6 pr-6">
                 {duplicatedRow2.map((skill, index) => (
                   <div 
                     key={`row2-${index}`} 
-                    className="px-5 py-2.5 whitespace-nowrap text-sm hover:text-white transition-colors duration-300 bg-gradient-to-r from-gray-900 to-gray-800 border border-gray-800 rounded-full"
+                    className="px-5 py-2.5 whitespace-nowrap text-sm text-black hover:bg-gray-100 transition-colors duration-300 bg-white border border-gray-200 rounded-full"
                   >
                     {skill}
                   </div>
