@@ -15,11 +15,6 @@ const Hero = () => {
   
   return (
     <section className="relative pt-32 pb-10 md:py-28 overflow-hidden">
-      {/* Enhanced background patterns */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-[radial-gradient(rgba(255,255,255,0.075)_1px,transparent_1px)] bg-[length:20px_20px]"></div>
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
-      </div>
       
       {/* Main content with increased spacing */}
       <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16 relative z-10">
