@@ -40,7 +40,7 @@ export const skillsData = {
     "React", "Next.js", "Node.js", "Redux", "Numpy", "Pandas", "Scikit-Learn"
   ],
   tools: [
-    "Git", "Github", "Docker", "Firebase", "Supabase", "AWS", "Prisma", "PostgreSQL"
+    "Git", "Github", "Docker", "Material UI", "Supabase", "AWS", "Prisma", "PostgreSQL"
   ]
 };
 

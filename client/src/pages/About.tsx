@@ -85,14 +85,17 @@ const About = () => {
             <div className="border-l border-gray-800 pl-6 pb-1">
               <div className="mb-8 relative">
                 <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
-                <h4 className="text-white font-medium">Technical Team Member</h4>
+                <h4 className="text-white font-medium">Core Member</h4>
                 <p className="text-gray-400 mt-1">Computer Society of India</p>
-                <p className="text-gray-500 text-sm mt-1">2023 - Present</p>
+                <p className="text-gray-500 text-sm mt-1">April 2023 - Present</p>
                 <p className="text-gray-400 mt-3">
-                  Active member of the technical team at CSI, one of India's largest computer science professional organizations. Contribute to web development projects and technical workshops, focusing on modern frontend frameworks and responsive design solutions. Collaborated on the development of event management platforms and interactive websites for student outreach programs.
+                  Technical Chapter, Vellore Institute of Technology, Vellore
                 </p>
                 <p className="text-gray-400 mt-3">
-                  Participated in organizing technical events, hackathons, and knowledge-sharing sessions for the student community. Assisted in conducting workshops on emerging technologies like AI, machine learning, and cloud computing. Regularly contribute to the CSI newsletter with technical articles and event reports.
+                  Coordinated Yantra 23 and Yantra 24, VIT's central hackathons, streamlining execution for 1000+ attendees.
+                </p>
+                <p className="text-gray-400 mt-3">
+                  Led the planning and execution of technical events and workshops, overseeing logistics, outreach, and engagement.
                 </p>
               </div>
             </div>
