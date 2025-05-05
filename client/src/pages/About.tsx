@@ -1,18 +1,15 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import SectionHeader from '../components/ui/section-header';
-import Resume from '../components/home/Resume';
 import Certifications from '../components/home/Certifications';
 import { cn } from '@/lib/utils';
 
 const About = () => {
   const [isLoaded, setIsLoaded] = useState(false);
   
-  // Scroll to top when the component mounts
   useEffect(() => {
     window.scrollTo(0, 0);
     
-    // Simulate loading delay for transition effect
     const timer = setTimeout(() => {
       setIsLoaded(true);
     }, 100);
@@ -22,18 +19,15 @@ const About = () => {
   
   return (
     <div className="min-h-screen pt-32 pb-16 relative">
-      {/* Enhanced background patterns */}
       <div className="absolute inset-0 z-0">
         <div className="absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:60px_60px]"></div>
         
-        {/* Subtle accent spots */}
         <div className="absolute top-48 left-[15%] w-72 h-72 rounded-full bg-white/2 blur-3xl"></div>
         <div className="absolute bottom-64 right-[10%] w-96 h-96 rounded-full bg-white/2 blur-3xl"></div>
       </div>
       
       <div className="max-w-5xl mx-auto px-8 md:px-12 lg:px-16 relative z-10">
         <div className={cn("transition-opacity duration-500", isLoaded ? 'opacity-100' : 'opacity-0')}>
-          {/* Back link */}
           <Link 
             to="/" 
             className="inline-flex items-center gap-2 text-gray-400 hover:text-white mb-12 text-sm group"
@@ -51,7 +45,6 @@ const About = () => {
             className="mb-10"
           />
           
-          {/* School Section */}
           <div className="mb-12">
             <h3 className="text-xl font-medium text-white mb-4">Education</h3>
             
@@ -62,7 +55,7 @@ const About = () => {
                 <p className="text-gray-400 mt-1">Vellore Institute of Technology</p>
                 <p className="text-gray-500 text-sm mt-1">2022 - 2026</p>
                 <p className="text-gray-400 mt-2">
-                  Pursuing a bachelor's degree with specialization in artificial intelligence and machine learning.
+                  Pursuing a bachelor's degree in Computer Science with specialization in Data Science.
                 </p>
               </div>
               
@@ -72,13 +65,12 @@ const About = () => {
                 <p className="text-gray-400 mt-1">High School</p>
                 <p className="text-gray-500 text-sm mt-1">2008 - 2022</p>
                 <p className="text-gray-400 mt-2">
-                  Completed high school education with a focus on science and mathematics, participating in numerous extracurricular activities and technology competitions. Received comprehensive education with strong emphasis on academic excellence and overall development.
+                  Completed high school education with PCM with Computer Science, participating in numerous extracurricular activities and technology competitions.
                 </p>
               </div>
             </div>
           </div>
           
-          {/* Computer Society of India */}
           <div className="mb-12">
             <h3 className="text-xl font-medium text-white mb-4">Organizations</h3>
             
@@ -101,15 +93,13 @@ const About = () => {
             </div>
           </div>
           
-          {/* Certifications section */}
           <div className="mb-12">
             <Certifications />
           </div>
           
-          {/* Download Resume button */}
           <div className="flex justify-center mt-10 mb-6">
             <a 
-              href="#" 
+              href="https://drive.google.com/file/d/1-sTWgcp_cNQK2pPyfzmRavH0ymxQpovI/view?usp=sharing" 
               className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-black font-medium px-6 py-2.5 text-sm transition-colors rounded-sm"
             >
               Download Full Resume

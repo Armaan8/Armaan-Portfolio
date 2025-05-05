@@ -5,7 +5,6 @@ import Footer from './components/layout/Footer';
 import Home from './pages/Home';
 import Projects from './pages/Projects';
 import About from './pages/About';
-import NotFound from './pages/not-found';
 import '@fontsource/inter';
 import './index.css';
 
@@ -21,8 +20,7 @@ const App = () => {
     return (
       <div className="fixed inset-0 flex items-center justify-center bg-[#0a0a0a]">
         <div className="flex flex-col items-center">
-          <div className="w-12 h-12 border-t-2 border-emerald-500 rounded-full animate-spin"></div>
-          <p className="mt-4 text-gray-400">Loading...</p>
+          <div className="w-12 h-12 border-t-2 border-gray-500 rounded-full animate-spin"></div>
         </div>
       </div>
     );
@@ -37,7 +35,6 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/about" element={<About />} />
-            <Route path="*" element={<NotFound />} />
           </Routes>
         </main>
         <Footer />
