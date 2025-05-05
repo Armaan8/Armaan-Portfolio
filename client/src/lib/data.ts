@@ -5,7 +5,7 @@ export const projectsData: ProjectData[] = [
     id: 1,
     title: "Project Management System",
     description: "Manage workflows with drag-and-drop functionality and Gantt charts for timeline visualization. Features real-time updates and task prioritization for improved planning efficiency.",
-    imageUrl: "public/project.png",
+    imageUrl: "/project.png",
     demoUrl: "https://master.d34cnzde3di62y.amplifyapp.com/",
     githubUrl: "https://github.com/Armaan8/project-management",
     tags: ["Next.js", "Node.js", "PostgreSQL", "AWS", "Redux Toolkit", "Prisma", "Material UI"]
@@ -14,7 +14,7 @@ export const projectsData: ProjectData[] = [
     id: 2,
     title: "AI Image Generation Application",
     description: "Creative image generator using Replicate's AI models. Features modern ShadCN UI and secure Supabase authentication in a responsive, intuitive interface for seamless user experience.",
-    imageUrl: "public/picgen.png",
+    imageUrl: "/picgen.png",
     demoUrl: "",
     githubUrl: "https://github.com/Armaan8/PicGen-A",
     tags: ["Next.js", "Tailwind","Supabase", "Replicate API", "ShadCN UI"]
