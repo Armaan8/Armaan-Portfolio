@@ -55,7 +55,7 @@ const About = () => {
                 <p className="text-gray-400 mt-1">Vellore Institute of Technology</p>
                 <p className="text-gray-500 text-sm mt-1">2022 - 2026</p>
                 <p className="text-gray-400 mt-2">
-                  Pursuing a bachelor's degree in Computer Science with specialization in Data Science.
+                  Pursuing BTech in Computer Science with specialization in Data Science.
                 </p>
               </div>
               
@@ -99,7 +99,7 @@ const About = () => {
           
           <div className="flex justify-center mt-10 mb-6">
             <a 
-              href="https://drive.google.com/file/d/1-sTWgcp_cNQK2pPyfzmRavH0ymxQpovI/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1A4gBiyrgY5HJmOnuoMJ8Ar6h9Ekx6dZR/view?usp=sharing" 
               className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-black font-medium px-6 py-2.5 text-sm transition-colors rounded-sm"
             >
               Download Full Resume
