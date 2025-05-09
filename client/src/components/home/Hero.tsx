@@ -39,7 +39,7 @@ const Hero = () => {
               isVisible ? "translate-y-0 opacity-100" : "translate-y-4 opacity-0"
             )}
           >
-            I create innovative web applications focusing on user experience and cutting-edge technology. Specializing in frontend and backend development, with expertise in React, Next.js, and AI.
+            Hi, I’m Armaan. Always curious, always learning, always building.
           </p>
 
           <div
