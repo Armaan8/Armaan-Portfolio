@@ -39,59 +39,87 @@ const About = () => {
           </Link>
           
           <SectionHeader 
-            title="About Me" 
-            subtitle="My background and experience"
-            centered={false}
-            className="mb-10"
-          />
-          
-          <div className="mb-12">
-            <h3 className="text-xl font-medium text-white mb-4">Education</h3>
-            
-            <div className="border-l border-gray-800 pl-6 pb-1">
-              <div className="mb-6 relative">
-                <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
-                <h4 className="text-white font-medium">B.Tech in Computer Science</h4>
-                <p className="text-gray-400 mt-1">Vellore Institute of Technology</p>
-                <p className="text-gray-500 text-sm mt-1">2022 - 2026</p>
-                <p className="text-gray-400 mt-2">
-                  Pursuing a bachelor's degree in Computer Science with specialization in Data Science.
-                </p>
-              </div>
-              
-              <div className="mb-4 relative">
-                <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
-                <h4 className="text-white font-medium">Delhi Public School, Gurgaon</h4>
-                <p className="text-gray-400 mt-1">High School</p>
-                <p className="text-gray-500 text-sm mt-1">2008 - 2022</p>
-                <p className="text-gray-400 mt-2">
-                  Completed high school education with PCM with Computer Science, participating in numerous extracurricular activities and technology competitions.
-                </p>
-              </div>
-            </div>
-          </div>
-          
-          <div className="mb-12">
-            <h3 className="text-xl font-medium text-white mb-4">Organizations</h3>
-            
-            <div className="border-l border-gray-800 pl-6 pb-1">
-              <div className="mb-4 relative">
-                <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
-                <h4 className="text-white font-medium">Core Member</h4>
-                <p className="text-gray-400 mt-1">Computer Society of India</p>
-                <p className="text-gray-500 text-sm mt-1">April 2023 - Present</p>
-                <p className="text-gray-400 mt-2">
-                  Technical Chapter, Vellore Institute of Technology, Vellore
-                </p>
-                <p className="text-gray-400 mt-2">
-                  Coordinated Yantra 23 and Yantra 24, VIT's central hackathons, streamlining execution for 1000+ attendees.
-                </p>
-                <p className="text-gray-400 mt-2">
-                  Led the planning and execution of technical events and workshops, overseeing logistics, outreach, and engagement.
-                </p>
-              </div>
-            </div>
-          </div>
+  title="About Me" 
+  subtitle="My background and experience"
+  centered={false}
+  className="mb-10"
+/>
+
+{/* Internship Experience */}
+<div className="mb-12">
+  <h3 className="text-xl font-medium text-white mb-4">Internship Experience</h3>
+  <div className="border-l border-gray-800 pl-6 pb-1">
+    <div className="mb-6 relative">
+      <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
+      <h4 className="text-white font-medium">Data/AI/ML Intern</h4>
+      <p className="text-gray-400 mt-1">Kantar – Bengaluru (Onsite)</p>
+      <p className="text-gray-500 text-sm mt-1">May 2025 – July 2025</p>
+      <p className="text-gray-400 mt-2">
+        Built a Gemini AI assistant integrated into Power BI dashboards for natural language Q&A and data uploads, 
+        and developed an end-to-end MLOps pipeline for hotel booking predictions with automated retraining and CI/CD deployment.
+      </p>
+    </div>
+  </div>
+</div>
+
+{/* Education */}
+<div className="mb-12">
+  <h3 className="text-xl font-medium text-white mb-4">Education</h3>
+  <div className="border-l border-gray-800 pl-6 pb-1">
+    <div className="mb-6 relative">
+      <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
+      <h4 className="text-white font-medium">B.Tech in Computer Science</h4>
+      <p className="text-gray-400 mt-1">Vellore Institute of Technology</p>
+      <p className="text-gray-500 text-sm mt-1">2022 – 2026</p>
+      <p className="text-gray-400 mt-2">
+        Pursuing a bachelor's degree with specialization in Data Science.
+      </p>
+    </div>
+  </div>
+</div>
+
+{/* Positions of Responsibility */}
+<div className="mb-12">
+  <h3 className="text-xl font-medium text-white mb-4">Positions of Responsibility</h3>
+  <div className="border-l border-gray-800 pl-6 pb-1">
+    
+    <div className="mb-6 relative">
+      <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
+      <h4 className="text-white font-medium">Core Member</h4>
+      <p className="text-gray-400 mt-1">Computer Society of India – VIT Vellore</p>
+      <p className="text-gray-500 text-sm mt-1">Apr 2023 – Present</p>
+      <p className="text-gray-400 mt-2">
+        Contributed to organizing Yantra '23 and '24, VIT’s central hackathons, streamlining execution for 1000+ attendees.
+      </p>
+      <p className="text-gray-400 mt-2">
+        Led planning and execution of technical workshops and events, overseeing logistics, outreach, and engagement.
+      </p>
+    </div>
+
+    <div className="mb-6 relative">
+      <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
+      <h4 className="text-white font-medium">Organizing Team Member</h4>
+      <p className="text-gray-400 mt-1">Yantra '23 & '24 Hackathon – VIT Vellore</p>
+      <p className="text-gray-500 text-sm mt-1">2023 – 2024</p>
+      <p className="text-gray-400 mt-2">
+        Managed operations for VIT’s central hackathon with a prize pool of 3+ lakh INR and 500+ participants.
+      </p>
+    </div>
+
+    <div className="mb-6 relative">
+      <div className="absolute -left-[25px] top-1 h-4 w-4 rounded-full bg-white"></div>
+      <h4 className="text-white font-medium">Student Body Coordinator</h4>
+      <p className="text-gray-400 mt-1">Student Council Management Team – VIT Vellore</p>
+      <p className="text-gray-500 text-sm mt-1">2023 – 2024</p>
+      <p className="text-gray-400 mt-2">
+        Served as liaison for 10+ student clubs, streamlining event approvals and resource allocation 
+        to enable successful club activities each semester.
+      </p>
+    </div>
+
+  </div>
+</div>
+
           
           <div className="mb-12">
             <Certifications />
