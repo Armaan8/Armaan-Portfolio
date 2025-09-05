@@ -99,7 +99,7 @@ const About = () => {
           
           <div className="flex justify-center mt-10 mb-6">
             <a 
-              href="https://drive.google.com/file/d/1-sTWgcp_cNQK2pPyfzmRavH0ymxQpovI/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1C5ZdK8AH0jHHbnPerSvuiKm5AZ0uhj9X/view?usp=sharing" 
               className="inline-flex items-center gap-2 bg-white hover:bg-gray-100 text-black font-medium px-6 py-2.5 text-sm transition-colors rounded-sm"
             >
               Download Full Resume
