@@ -41,7 +41,6 @@ const Projects = () => {
           
           <SectionHeader 
             title="Projects" 
-            subtitle="Innovative web applications I've built"
             centered={false}
             className="mb-16"
           />
