@@ -3,8 +3,8 @@ import { cn } from '@/lib/utils';
 import SectionHeader from '../ui/section-header';
 import { skillsData } from '@/lib/data';
 
-const row1Skills = [...skillsData.languages, ...skillsData.frameworks];
-const row2Skills = [...skillsData.tools, 'REST API', 'Responsive Design', 'Authentication'];
+const row1Skills = [...skillsData.languages, ...skillsData.dataEngineering];
+const row2Skills = [...skillsData.visualizationAndBI, ...skillsData.visualizationAndBI];
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);
