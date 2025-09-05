@@ -54,7 +54,7 @@ export const skillsData = {
     "SQL",
     "JavaScript",
     "TypeScript",
-    "Java"
+    "Java",
   ],
   dataEngineering: [
     "ETL",
@@ -62,9 +62,7 @@ export const skillsData = {
     "PostgreSQL",
     "MySQL",
     "Redis",
-    "Prisma"
-  ],
-  mlAndAnalytics: [
+    "Prisma",
     "Pandas",
     "NumPy",
     "Scikit-Learn",
@@ -73,26 +71,18 @@ export const skillsData = {
     "Feature Engineering",
     "Anomaly Detection"
   ],
-  mlopsAndInfra: [
-    "DVC",
-    "Docker",
-    "GitHub Actions (CI/CD)",
-    "AWS (EC2, S3, Parameter Store)",
-    "Model Versioning",
-    "Monitoring & Logging"
-  ],
   visualizationAndBI: [
     "Power BI",
     "Tableau",
     "Looker",
     "Excel",
-    "Dashboard Design"
-  ],
-  devtools: [
-    "Git",
-    "GitHub",
-    "VS Code",
-    "Postman"
+    "Dashboard Design",
+    "DVC",
+    "Docker",
+    "GitHub Actions (CI/CD)",
+    "AWS",
+    "Model Versioning",
+    "Monitoring & Logging"
   ]
 };
 

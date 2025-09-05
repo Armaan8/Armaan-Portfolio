@@ -4,7 +4,7 @@ import SectionHeader from '../ui/section-header';
 import { skillsData } from '@/lib/data';
 
 const row1Skills = [...skillsData.languages, ...skillsData.dataEngineering];
-const row2Skills = [...skillsData.visualizationAndBI, ...skillsData.visualizationAndBI];
+const row2Skills = [...skillsData.visualizationAndBI];
 
 const Skills = () => {
   const [isVisible, setIsVisible] = useState(false);

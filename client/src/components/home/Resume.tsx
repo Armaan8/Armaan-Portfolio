@@ -22,7 +22,7 @@ const Resume = () => {
   const resumeData = [
     {
       title: "Data/AI/ML Intern",
-      subtitle: "Kantar – Bengaluru (Onsite)",
+      subtitle: "Kantar - Bengaluru (Onsite)",
       duration: "May 2025 - July 2025",
       description: "Built a Gemini AI assistant integrated into Power BI dashboards for natural language Q&A and data uploads, and developed an end-to-end MLOps pipeline for hotel booking predictions with automated retraining and CI/CD deployment.",
     },
