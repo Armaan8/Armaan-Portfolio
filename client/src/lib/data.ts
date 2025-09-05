@@ -5,7 +5,7 @@ export const projectsData: ProjectData[] = [
     id: 1,
     title: "E-commerce Business Insights (Olist)",
     description: "End-to-end SQL analytics on 100k+ rows joining 8+ tables; built multi-page Power BI dashboards to monitor sales, shipping performance, payment method impact and key business KPIs.",
-    imageUrl: "public/olist.png",
+    imageUrl: "/olist.png",
     demoUrl: "",
     githubUrl: "https://github.com/Armaan8/Olist-Analysis",
     tags: ["SQL", "PostgreSQL", "Power BI", "Data Modeling", "Time Series"]
@@ -14,7 +14,7 @@ export const projectsData: ProjectData[] = [
     id: 2,
     title: "Am I Healthy? — Apple Health Analytics",
     description: "Processed and transformed 1.6M+ Apple Health records into a daily analytics store; performed feature engineering, time-series trend analysis and predictive modeling for resting heart rate and activity forecasting.",
-    imageUrl: "public/health.png",
+    imageUrl: "/health.png",
     demoUrl: "",
     githubUrl: "https://github.com/Armaan8/Apple_Health_Analysis",
     tags: ["Python", "Pandas", "Feature Engineering", "Time Series", "Predictive Modeling"]
@@ -23,7 +23,7 @@ export const projectsData: ProjectData[] = [
     id: 3,
     title: "Interactive HR Analytics Dashboard",
     description: "Designed a Tableau dashboard to track 10+ HR KPIs (attrition, headcount, income); implemented drill-downs and exportable reports to support stakeholder decision-making and self-service analytics.",
-    imageUrl: "public/hr.png",
+    imageUrl: "/hr.png",
     demoUrl: "https://public.tableau.com/app/profile/armaan.sharma5268/viz/HRDashboard_17244247612440/HRSummary",
     githubUrl: "",
     tags: ["Tableau", "KPI Reporting", "Data Visualization", "Self-Service BI"]
@@ -32,7 +32,7 @@ export const projectsData: ProjectData[] = [
     id: 4,
     title: "AI Image Generation Application",
     description: "Full-stack AI application leveraging Replicate’s diffusion models; integrated secure Supabase auth, history tracking, and prompt tuning to provide responsive, personalized image generation workflows.",
-    imageUrl: "public/picgen.png",
+    imageUrl: "/picgen.png",
     demoUrl: "",
     githubUrl: "https://github.com/Armaan8/PicGen-A",
     tags: ["Next.js", "Tailwind", "Supabase", "Replicate API", "AI Deployment"]
@@ -41,7 +41,7 @@ export const projectsData: ProjectData[] = [
     id: 5,
     title: "Project Management System (Data Ops Features)",
     description: "Full-stack Kanban app with metadata tracking, task analytics and exportable timelines; added instrumentation for usage metrics and dashboards to monitor team throughput and SLA compliance.",
-    imageUrl: "public/project.png",
+    imageUrl: "/project.png",
     demoUrl: "https://master.d34cnzde3di62y.amplifyapp.com/",
     githubUrl: "https://github.com/Armaan8/project-management",
     tags: ["Next.js", "PostgreSQL", "Analytics", "Prisma", "Instrumentation"]
