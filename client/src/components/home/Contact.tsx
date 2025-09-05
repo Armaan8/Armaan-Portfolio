@@ -78,7 +78,7 @@ const Contact = () => {
             )}
           >
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-              I'm available for new opportunities to build impactful applications and innovative solutions.
+              I'm available for new opportunities to build new stuff and innovate solutions.
             </p>
 
             <div className="py-6">
